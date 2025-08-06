@@ -10,3 +10,10 @@
 8. Create a nested folder structure `demo/test1/test2` in one command.
 9. Navigate to `test2` using only relative paths.
 10. Clear the terminal using `clear` or `Ctrl + L`.
+11. Commits and push the changes to your GitHub repository.
+
+```bash
+git add .
+git commit -m "choose a descriptive message"
+git push
+```
