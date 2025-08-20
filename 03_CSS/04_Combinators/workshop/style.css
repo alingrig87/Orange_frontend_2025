@@ -1,0 +1,11 @@
+div a {
+	color: green;
+}
+
+div > a {
+	color: red;
+}
+
+div + p > span {
+	color: pink;
+}

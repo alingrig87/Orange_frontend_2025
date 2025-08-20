@@ -1,0 +1,19 @@
+[href] {
+	color: red;
+}
+
+[id][href^='https'] {
+	color: black;
+}
+
+[href^='https'] {
+	color: green;
+}
+
+[href$='.pdf'] {
+	color: magenta;
+}
+
+[href*='google'] {
+	color: violet;
+}

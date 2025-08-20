@@ -1,0 +1,6 @@
+input:checked {
+	outline: 2px solid deeppink;
+}
+button:disabled {
+	background-color: red;
+}

@@ -1,0 +1,36 @@
+ul > li:first-child {
+	color: red;
+}
+
+ul > li:last-child {
+	color: blue;
+}
+
+ul > li:nth-child(2) {
+	color: green;
+}
+
+/* table > tbody > tr:nth-child(2n + 1) {
+	background-color: gray;
+}
+
+table > tbody > tr:nth-child(2n) {
+	background-color: lightblue;
+}
+
+table > tbody > tr:first-child {
+	background-color: red;
+} */
+
+/* 2,
+5,
+9,
+11  */
+
+thead > tr {
+	background-color: red;
+}
+
+table > tbody > tr:nth-child(2n + 1) {
+	background-color: gray;
+}
