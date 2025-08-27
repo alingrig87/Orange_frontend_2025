@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Form</title>
+		<!-- Font Awesome -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				margin: 0;
+				font-family: 'Segoe UI', Arial, sans-serif;
+				background-color: #ffffff;
+			}
+
+			.header {
+				background: #4daaf7;
+				height: 200px;
+			}
+
+			.form-container {
+				background: #fff;
+				width: 480px;
+				max-width: 95%;
+				margin: -120px auto 40px;
+				padding: 40px;
+				border-radius: 12px;
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+				text-align: center;
+			}
+
+			.form-container h2 {
+				margin: 0;
+				font-size: 26px;
+				font-weight: bold;
+				color: #222;
+			}
+
+			.form-container p {
+				color: #666;
+				margin: 10px 0 25px;
+				font-size: 14px;
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+			}
+
+			.row {
+				display: flex;
+				gap: 15px;
+			}
+
+			input,
+			textarea {
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #ddd;
+				border-radius: 6px;
+				font-size: 14px;
+				background-color: #fafafa;
+				transition: border-color 0.3s ease;
+			}
+
+			input:focus,
+			textarea:focus {
+				outline: none;
+				border-color: #4daaf7;
+			}
+
+			textarea {
+				resize: none;
+				height: 100px;
+			}
+
+			button {
+				background: #4daaf7;
+				color: white;
+				border: none;
+				padding: 14px;
+				font-size: 16px;
+				border-radius: 6px;
+				cursor: pointer;
+				transition: background 0.3s ease;
+			}
+
+			button:hover {
+				background: #2d95e0;
+			}
+
+			.social {
+				text-align: center;
+				margin: 20px 0;
+			}
+
+			.social a {
+				margin: 0 12px;
+				text-decoration: none;
+				font-size: 22px;
+				color: #4daaf7;
+				transition: color 0.3s ease;
+			}
+
+			.social a:hover {
+				color: #2d95e0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header"></div>
+
+		<div class="form-container">
+			<h2>Get in Touch</h2>
+			<p>Nunc erat cursus tellus gravida.</p>
+			<form>
+				<div class="row">
+					<input type="text" placeholder="Please enter first name..." />
+					<input type="text" placeholder="Please enter last name..." />
+				</div>
+				<div class="row">
+					<input type="email" placeholder="Please enter email..." />
+					<input type="tel" placeholder="Please enter phone number..." />
+				</div>
+				<textarea placeholder="Please enter query..."></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+
+		<div class="social">
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-google"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+	</body>
+</html>

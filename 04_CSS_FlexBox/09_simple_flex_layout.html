@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flex Layout</title>
+		<style>
+			.container {
+				display: flex;
+				height: 90vh;
+				gap: 2px;
+			}
+			.left {
+				display: flex;
+				gap: 2px;
+				flex-direction: column;
+				flex: 2;
+			}
+			.right {
+				display: flex;
+				flex: 1;
+				background-color: blue;
+			}
+
+			.lorem1 {
+				background-color: lime;
+				flex: 2;
+			}
+
+			.lorem234 {
+				display: flex;
+				flex: 2;
+				gap: 2px;
+			}
+
+			.lorem5 {
+				background-color: #4e7cf1;
+				flex: 1;
+			}
+
+			.lorem24 {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				gap: 2px;
+			}
+
+			.lorem2 {
+				flex: 1;
+				background-color: magenta;
+			}
+			.lorem4 {
+				flex: 1;
+				background-color: aqua;
+			}
+
+			.lorem3 {
+				display: flex;
+				flex: 1;
+				background-color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<div class="lorem1"></div>
+				<div class="lorem234">
+					<div class="lorem24">
+						<div class="lorem2"></div>
+						<div class="lorem4"></div>
+					</div>
+					<div class="lorem3"></div>
+				</div>
+				<div class="lorem5"></div>
+			</div>
+			<div class="right"></div>
+		</div>
+	</body>
+</html>

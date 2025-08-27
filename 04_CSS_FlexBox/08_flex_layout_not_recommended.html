@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flex Layout</title>
+		<style>
+			.container {
+				display: flex;
+				height: 90vh;
+			}
+
+			.container > .left {
+				display: flex;
+				flex-direction: column;
+				flex: 2;
+			}
+
+			.center {
+				display: flex;
+			}
+
+			.container > .center > .left {
+				display: flex;
+				flex-direction: column;
+				background-color: red;
+			}
+
+			.container > .right {
+				background-color: blue;
+				flex: 1;
+			}
+
+			.container > .left > .top {
+				flex: 2;
+				background-color: lawngreen;
+			}
+
+			.container > .left > .center {
+				display: flex;
+				flex: 2;
+			}
+
+			.container > .left > .bottom {
+				flex: 1;
+				background-color: salmon;
+			}
+
+			.container > .left > .center > .left {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				background-color: magenta;
+			}
+
+			.container > .left > .center > .right {
+				flex: 1;
+				background-color: red;
+			}
+
+			.container > .left > .center > .left > .top {
+				flex: 1;
+				background-color: green;
+			}
+
+			.container > .left > .center > .left > .bottom {
+				flex: 1;
+				background-color: rgb(108, 8, 108);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<div class="top"></div>
+				<div class="center">
+					<div class="left">
+						<div class="top"></div>
+						<div class="bottom"></div>
+					</div>
+					<div class="right"></div>
+				</div>
+				<div class="bottom"></div>
+			</div>
+			<div class="right"></div>
+		</div>
+	</body>
+</html>
