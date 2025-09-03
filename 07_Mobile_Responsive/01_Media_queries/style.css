@@ -1,0 +1,53 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: antiquewhite;
+}
+
+h1 {
+	display: none;
+	font-size: 100px;
+	color: white;
+}
+
+/* widescreen */
+@media (min-width: 1201px) {
+	body {
+		background-color: blueviolet;
+	}
+	#widescreen > h1 {
+		display: block;
+	}
+}
+
+/* laptop */
+@media (min-width: 801px) and (max-width: 1200px) {
+	body {
+		background-color: orange;
+	}
+
+	#laptop > h1 {
+		display: block;
+	}
+}
+
+/* tablet */
+@media (min-width: 501px) and (max-width: 800px) {
+	body {
+		background-color: black;
+	}
+
+	#tablet > h1 {
+		display: block;
+	}
+}
+
+/* smartphone */
+@media (max-width: 500px) {
+	body {
+		background-color: blue;
+	}
+
+	#smartphone > h1 {
+		display: block;
+	}
+}

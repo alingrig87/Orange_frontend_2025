@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		'one one two two two two two two'
+		'one one three three three four four four'
+		'five five six six six six seven seven'
+		'eight eight six six six six seven seven';
+	height: 100vh;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	font-size: 30px;
+	gap: 5px;
+	grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 1fr 2fr 1fr;
+}
+
+#one {
+	grid-area: one;
+	background-color: #e31c68;
+}
+
+#two {
+	grid-area: two;
+	background-color: orange;
+}
+
+#three {
+	grid-area: three;
+	background-color: purple;
+}
+
+#four {
+	grid-area: four;
+	background-color: rgb(36, 60, 81);
+}
+
+#five {
+	grid-area: five;
+	background-color: gray;
+}
+
+#six {
+	grid-area: six;
+	background-color: lime;
+}
+
+#seven {
+	grid-area: seven;
+	background-color: lightskyblue;
+}
+
+#eight {
+	grid-area: eight;
+	background-color: magenta;
+}

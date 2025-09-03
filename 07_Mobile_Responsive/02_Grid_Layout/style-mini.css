@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+	.container {
+		grid-template-areas:
+			'one'
+			'two'
+			'three'
+			'four'
+			'five'
+			'six'
+			'seven'
+			'eight';
+
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(8, 200px);
+		padding: 20px;
+		gap: 20px;
+	}
+}
