@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="inaltime-container">
+				<label for="input-inaltime">Inaltime</label>
+				<input
+					type="text"
+					id="input-inaltime"
+					placeholder="inaltime in metri"
+				/>
+			</div>
+			<div class="greutate-container">
+				<label for="input-greutate">Greutate</label>
+				<input
+					type="text"
+					id="input-greutate"
+					placeholder="greutate in kilograme"
+				/>
+			</div>
+			<div>
+				<button onclick="afiseazaRezultateIMC()">Caluleaza IMC</button>
+			</div>
+			<p id="output"></p>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
