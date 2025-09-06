@@ -39,6 +39,7 @@ var varsta = 30;
 var text1 = 'Ma numesc' + ' ' + nume + ' si am ' + varsta + ' ani';
 console.log(text1);
 console.log('Ma numesc', nume, 'si am', varsta, 'ani');
+console.log(`Ma numeste ${nume} si am ${varsta} ani`);
 
 var text2 = 20 + 40 + 40 + '20' + 40 + 40;
 console.log(text2);

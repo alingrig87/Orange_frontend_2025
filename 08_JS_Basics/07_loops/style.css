@@ -1,0 +1,39 @@
+.masina {
+	width: 220px;
+	padding: 16px;
+	margin: 12px;
+	border-radius: 12px;
+	background: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s, box-shadow 0.2s;
+	font-family: Arial, sans-serif;
+}
+
+.masina:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.masina p {
+	margin: 6px 0;
+	font-size: 14px;
+	color: #333;
+}
+
+.masina .marca {
+	font-weight: bold;
+	font-size: 18px;
+	color: #0056b3;
+}
+
+.masina .model {
+	font-size: 16px;
+	font-weight: 500;
+	color: #333;
+}
+
+.masina .km,
+.masina .an {
+	font-size: 13px;
+	color: #666;
+}
