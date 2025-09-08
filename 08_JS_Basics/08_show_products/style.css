@@ -1,0 +1,24 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+}
+.container {
+	display: flex;
+	gap: 20px;
+}
+.card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 10px;
+	text-align: center;
+	width: 150px;
+}
+.card img {
+	max-width: 100%;
+	border-radius: 6px;
+}
+.price {
+	font-weight: bold;
+	color: #2c7;
+}
