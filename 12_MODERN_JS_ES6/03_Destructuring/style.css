@@ -1,0 +1,30 @@
+/* CSS styles */
+.card {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 300px;
+	margin: 20px auto;
+	padding: 20px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+	transition: transform 0.2s ease-in-out;
+}
+
+.card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.card h1 {
+	font-size: 1.5em;
+	margin: 15px 0;
+	color: #333;
+}
+
+.card p {
+	font-size: 1.2em;
+	color: #555;
+}

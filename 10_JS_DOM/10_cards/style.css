@@ -1,0 +1,114 @@
+body {
+  background-color: rgb(255, 249, 254);
+}
+
+#container {
+  padding: 60px;
+  font-family: "noto sans";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  width: 175px;
+  height: 175px;
+  padding: 5px;
+}
+
+.product-card {
+  background-color: white;
+
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 60px 90px 0 rgba(0, 0, 0, 0.25),
+    0 20px 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nume,
+.pret {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.descriere {
+  padding: 0px 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #bfc5c7;
+}
+
+.cumpara {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  margin-bottom: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-size: 22px;
+  opacity: 80%;
+  transition: ease 0.3s;
+}
+
+.cumpara:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.blue {
+  background-color: #0c82a0;
+}
+
+.purple {
+  background-color: #3d3e6c;
+}
+
+.black {
+  background-color: #0b0b0b;
+}
+
+.yellow {
+  background-color: #ffa04c;
+}
+
+.spatiuStele {
+  font-size: 25px;
+}
+
+.steaPlina {
+  color: transparent;
+  text-shadow: 0 0 0 #f79e47;
+}
+
+.steaGoala {
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  transition: ease 0.3s;
+}
+
+.steaGoala:hover {
+  color: transparent;
+  text-shadow: 0 0 0 #f79e47;
+  transition: ease 0.3s;
+}
+
+.steaPlina:hover,
+.steaGoala:hover {
+  cursor: pointer;
+}

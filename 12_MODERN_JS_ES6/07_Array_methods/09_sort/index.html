@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div>
+			<label for="sort-options">Sorteaza dupa</label>
+			<select id="sort-options">
+				<option value="default">Oferte pentru tine</option>
+				<option value="noi">Noi</option>
+				<option value="priceAsc">Pret crescator</option>
+				<option value="priceDesc">Pret descrescator</option>
+				<option value="nameAsc">Nume(A-Z)</option>
+				<option value="nameDesc">Nume(Z-A)</option>
+			</select>
+		</div>
+		<div id="container"></div>
+		<script src="app.js"></script>
+	</body>
+</html>

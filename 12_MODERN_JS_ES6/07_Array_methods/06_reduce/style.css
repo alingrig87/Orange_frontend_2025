@@ -1,0 +1,22 @@
+/* CSS styles */
+
+#container {
+	display: flex;
+	gap: 30px;
+}
+
+.card {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 200px;
+	border: 2px solid darkcyan;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.card img {
+	width: 200px;
+}
+
+.card p {
+	text-align: center;
+}
