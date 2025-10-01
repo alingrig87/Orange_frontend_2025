@@ -1,9 +1,7 @@
-// shift and unshift methods - starter code
-// TODO: Learn about shift and unshift and implement examples
+const cart = ['Apa', 'Lapte', 'Bere'];
 
-// Example:
-// const fruits = ['apple', 'banana'];
-// fruits.unshift('orange'); // adds to beginning
-// const firstFruit = fruits.shift(); // removes from beginning
+const firstElement = cart.shift();
+console.log(firstElement, cart);
 
-// TODO: Add your shift/unshift examples here
+cart.unshift('Unt');
+console.log(cart);

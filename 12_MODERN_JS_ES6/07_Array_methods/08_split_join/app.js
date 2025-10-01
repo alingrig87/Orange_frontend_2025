@@ -1,12 +1,11 @@
-// split and join methods - starter code
-// TODO: Learn about split and join and implement examples
+// split - used with strings
+const str = 'Ana are mere';
+const words = str.split(' ');
+console.log(words);
 
-// split example (string to array):
-// const sentence = "Hello world from JavaScript";
-// const words = sentence.split(" ");
+const str2 = '0722-403-508';
+console.log(str2.split('-'));
 
-// join example (array to string):
-// const words = ["Hello", "world", "from", "JavaScript"];
-// const sentence = words.join(" ");
-
-// TODO: Add your split/join examples here
+// join
+const numbers = [10, 20, 30, 40, 50];
+console.log(numbers.join(' ----> '));

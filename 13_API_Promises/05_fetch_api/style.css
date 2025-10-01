@@ -1,28 +1,71 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
+	background: #f4f4f9;
 	padding: 20px;
+	color: #333;
 }
 
-#products {
+/* Butoane */
+button {
+	padding: 8px 14px;
+	margin: 5px;
+	border: none;
+	border-radius: 4px;
+	background: #3498db;
+	color: white;
+	cursor: pointer;
+}
+button:hover {
+	background: #2980b9;
+}
+
+/* Inputuri */
+div {
+	margin: 10px 0;
+}
+label {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+input {
+	width: 100%;
+	padding: 6px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* Zona produse */
+#services {
+	margin-top: 20px;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: center;
+	gap: 15px;
 }
 
 .product-card {
-	background-color: white;
-	border: 1px solid gray;
-	border-radius: 8px;
-	width: 300px;
-	padding: 20px;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 12px;
+	width: 220px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.product-card img {
-	height: 280px;
+.product-card h3 {
+	margin: 0 0 8px;
+	font-size: 18px;
+	color: #222;
+}
+
+.product-card p {
+	margin: 4px 0;
+	font-size: 14px;
+	color: #555;
+}
+
+.product-card .price {
+	font-weight: bold;
+	color: #27ae60;
+	margin-top: 8px;
 }

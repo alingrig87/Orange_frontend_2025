@@ -1,9 +1,11 @@
-// Rest parameters - starter code
-// TODO: Learn about rest parameters and implement examples
+function sum(a, b, ...nums) {
+	var suma = a + b;
+	for (let i = 0; i <= nums.length - 1; i++) {
+		suma = suma + nums[i];
+	}
+	return suma;
+}
 
-// Example:
-// function sum(...numbers) {
-//     return numbers.reduce((total, num) => total + num, 0);
-// }
-
-// TODO: Add your rest parameters examples here
+// console.log(sum([1, 4, 5]));
+console.log(sum(1, 4, 20, 1, 11, 11));
+console.log(sum(1, 4, 5, 20, 21));

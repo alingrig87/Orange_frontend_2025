@@ -1,9 +1,9 @@
-// push and pop methods - starter code
-// TODO: Learn about push and pop and implement examples
+const cart = ['Apa'];
+cart.push('Lapte');
+cart.push('Bere');
 
-// Example:
-// const fruits = ['apple', 'banana'];
-// fruits.push('orange'); // adds to end
-// const lastFruit = fruits.pop(); // removes from end
+console.log(cart);
 
-// TODO: Add your push/pop examples here
+const lastElement = cart.pop();
+console.log('Last element', lastElement);
+console.log('Cart ', cart);

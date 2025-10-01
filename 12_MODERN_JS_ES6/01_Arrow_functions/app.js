@@ -1,12 +1,15 @@
-// Arrow functions - starter code
-// TODO: Learn about arrow functions and implement examples
+function sum(a, b) {
+	return a + b;
+}
 
-// Traditional function
-// function add(a, b) {
-//     return a + b;
-// }
+const sum = (a, b) => a + b;
 
-// Arrow function
-// const add = (a, b) => a + b;
+function square(x) {
+	const y = x * x;
+	return y;
+}
 
-// TODO: Add your arrow function examples here
+const square = (x) => {
+	const y = x * x;
+	return y;
+};

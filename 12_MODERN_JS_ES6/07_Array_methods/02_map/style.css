@@ -22,7 +22,16 @@
 	color: #555;
 }
 
+.card img {
+	width: 100px;
+}
+
 .card:hover {
 	transform: scale(1.05);
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }

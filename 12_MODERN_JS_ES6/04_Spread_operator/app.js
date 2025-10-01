@@ -1,12 +1,11 @@
-// Spread operator - starter code
-// TODO: Learn about spread operator and implement examples
+const a = [1, 2];
+const b = [3, 4, 5, 6];
 
-// Array spread example:
-// const arr1 = [1, 2, 3];
-// const arr2 = [...arr1, 4, 5];
+const c = [...a, 2, 8, 9, ...b];
+console.log(c);
 
-// Object spread example:
-// const obj1 = { name: "John" };
-// const obj2 = { ...obj1, age: 30 };
+const defaultValues = { x: 0, y: 0 };
+const values = { y: 10, z: 5 };
 
-// TODO: Add your spread operator examples here
+const config = { ...defaultValues, ...values };
+console.log(config);

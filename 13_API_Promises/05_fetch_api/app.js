@@ -1,25 +1,52 @@
-// Fetch API - starter code
-// TODO: Learn about fetch API and making HTTP requests
+const URL = 'https://68dd5b4bd7b591b4b78c31e1.mockapi.io/services';
 
-// Fetch example:
-// fetch('https://jsonplaceholder.typicode.com/posts/1')
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-//     .catch(error => console.error('Error:', error));
+const getButton = document.getElementById('get');
+getButton.addEventListener('click', displayServices);
+const servicesContainer = document.getElementById('services');
 
-// POST request example:
-// fetch('https://jsonplaceholder.typicode.com/posts', {
-//     method: 'POST',
-//     headers: {
-//         'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify({
-//         title: 'My Post',
-//         body: 'This is my post content',
-//         userId: 1
-//     })
-// })
-// .then(response => response.json())
-// .then(data => console.log(data));
+function displayServices() {
+	fetch(URL)
+		.then((response) => response.json())
+		.then(
+			(services) =>
+				(servicesContainer.innerHTML = services
+					.map(
+						(service) => `
+         <div class="product-card">
+            <h3>${service.nume}</h3>
+            <p>Durata:${service.durataOre}</p>
+            <p>Categorie: ${service.categorie}</p>
+            <p>Garanție: ${service.garantieLuni}</p>
+            <p class="price">Preț: ${service.pret} RON</p>
+         </div>
+         `
+					)
+					.join(''))
+		);
+}
 
-// TODO: Add your fetch API examples here
+const postButton = document.getElementById('post');
+postButton.addEventListener('click', addNewService);
+const numeInput = document.getElementById('nume');
+const durataOreInput = document.getElementById('durata-ore');
+const pretInput = document.getElementById('pret');
+const categorieInput = document.getElementById('categorie');
+const garantieLuniInput = document.getElementById('garantie-luni');
+
+function addNewService() {
+	const newService = {
+		nume: numeInput.value,
+		durataOre: durataOreInput.value,
+		pret: pretInput.value,
+		categorie: categorieInput.value,
+		garantieLuni: garantieLuniInput.value,
+	};
+
+	fetch(URL, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify(newService),
+	})
+		.then((response) => response.json())
+		.then((data) => displayServices());
+}
